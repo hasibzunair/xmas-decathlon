@@ -32,7 +32,7 @@ Clone this repo
 git clone https://github.com/hasibzunair/xmas-decathlon
 cd xmas-decathlon
 ```
-Then, run `app.py`. You can find your christmas card in `data/your_avatar.png`.
+Then, run `app.py` and take a snapshot. You can find your christmas card in `data/your_avatar.png`.
 
 If you want to modify the background image or the song, simply head over to the data/ folder and switch the background images and wav file to anything you would like!
 ### References
