@@ -14,7 +14,7 @@ Samuel Mercier.
 ### Requirements
 
 Python = 3.9.0 required. You'll also need to have an available Webcam (camera) to capture your beautiful face :). Then, run below commands.
-```
+```bash
 conda create -n xmas python=3.9
 conda install -c conda-forge jupyterlab
 pip install kivy, kivymd, opencv-python
@@ -28,7 +28,7 @@ the modified image with a santa claus hat and bear, a nice christmas background 
 ### Run 
 
 Clone this repo 
-```
+```bash
 git clone https://github.com/hasibzunair/xmas-decathlon
 cd xmas-decathlon
 ```
