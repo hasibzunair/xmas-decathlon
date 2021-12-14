@@ -24,10 +24,8 @@ def christmas_hat(img):
     faces = face_detect(img, cname)
     
     if faces is not None:
-        #hats = [cv2.imread(f'img/hats/hat_{i+1}.png', -1) for i in range(3)]
         hat = cv2.imread('./data/h1.png', -1)
         for face in faces:
-            #hat = hats[]#c_hat[0] #random.choice(hats)
             scale = face[3] / hat.shape[0] * 2
             hat = cv2.resize(hat, (0, 0), fx=scale, fy=scale)
             x_offset = int(face[0] + face[2] / 2 - hat.shape[1] / 2)
@@ -48,9 +46,7 @@ def christmas_hat(img):
             for c in range(3):
                 img[y1:y2, x1:x2, c] = alpha_h * hat[hat_y1:hat_y2, hat_x1:hat_x2, c] + alpha * img[y1:y2, x1:x2, c]
 
-
             img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
             return img
         
         else:
@@ -72,13 +68,10 @@ def christmas_beard(img):
     faces = face_detect(img, cname)
     
     if faces is not None:
-
         moustache = cv2.imread('./data/b1.png', -1)
-        print(faces)
         for face in faces:
-            hat = moustache #hats[2] #random.choice(hats)
+            hat = moustache
             scale = face[3] / hat.shape[0]
-            #sf = 0.5
             hat = cv2.resize(hat, (0, 0), fx=scale, fy=scale)
             x_offset = int(face[0] + face[2] / 2 - hat.shape[1] / 2)
             y_offset = int(face[1] - hat.shape[0] / 2) + 250
@@ -97,10 +90,8 @@ def christmas_beard(img):
 
             for c in range(3):
                 img[y1:y2, x1:x2, c] = alpha_h * hat[hat_y1:hat_y2, hat_x1:hat_x2, c] + alpha * img[y1:y2, x1:x2, c]
-
-
+                
             #img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
             return img
 
         else:
@@ -151,10 +142,6 @@ class CamApp(MDApp):
         layout.add_widget(self.toolbar)
         #layout.add_widget(self.save_button)
         layout.add_widget(self.img1)
-        #layout.add_widget(sv)
-        #layout.add_widget(self.prompt_button1)
-        #layout.add_widget(self.card)
-        #opencv2 stuffs
         self.capture = cv2.VideoCapture(0)
         cv2.namedWindow("CV2 Image")
         Clock.schedule_interval(self.update, 1.0/33.0)
@@ -165,8 +152,7 @@ class CamApp(MDApp):
         ret, frame = self.capture.read()
         cv2.imshow("CV2 Image", frame)
         # convert it to texture
-
-        #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        
         
         hat_img = christmas_hat(frame)
         hat_img = christmas_beard(hat_img)
