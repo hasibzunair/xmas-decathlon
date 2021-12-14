@@ -35,6 +35,8 @@ cd xmas-decathlon
 Then, run `app.py` and take a snapshot. You can find your christmas card in `data/your_avatar.png`.
 
 If you want to modify the background image or the song, simply head over to the data/ folder and switch the background images and wav file to anything you would like!
+
+
 ### References
 * [https://pythontic.com/app/kivy/camera](https://pythontic.com/app/kivy/camera)
 * [https://github.com/XavierJiezou/opencv-christmas-hat](https://github.com/XavierJiezou/opencv-christmas-hat)
