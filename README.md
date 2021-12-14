@@ -22,7 +22,7 @@ pip install kivy, kivymd, opencv-python
 
 ### What it does?
 
-This library uses machine learning (face detection) to add a nice christmas app and christma beard to your background. Based on KivyMD, run the `app.py` to see two screens appear: one will be the regular video as captured by your webcam, while the other screen will show you
+This library uses machine learning (face detection) to add a nice christmas app and christmas beard to your background. Based on KivyMD, run the `app.py` to see two screens appear: one will be the regular video as captured by your webcam, while the other screen will show you
 the modified image with a santa claus hat and bear, a nice christmas background and even a Mariah Carey song to boost your christmas spirit!
 
 ### Run 
