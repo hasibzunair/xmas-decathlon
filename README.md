@@ -3,6 +3,14 @@
 App for Decathlon Canada AI Team christmas coding party. Done by Hasib Zunair, Guillaume Brassard and 
 Samuel Mercier. 
 
+<p align="center">
+    <a href="#"><img src="./data/your_avatar.png"></a> <br/>
+    <em>
+    Figure 1. Your christmas card picture!
+    </em>
+</p>
+
+
 ### Installation
 
 ```
