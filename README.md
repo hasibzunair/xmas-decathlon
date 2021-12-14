@@ -1,6 +1,7 @@
-# Decathlon Canada AI Team Christmas Coding Party
+## Christmas Face Application
 
-
+App for Decathlon Canada AI Team christmas coding party. Done by Hasib Zunair, Guillaume Brassard and 
+Samuel Mercier. 
 
 ### Installation
 
